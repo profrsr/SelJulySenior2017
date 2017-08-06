@@ -7,9 +7,8 @@ import wrappers.LeafTapsWrapper;
 
 public class MergeLead extends LeafTapsWrapper {
 	
-	@Test(enabled=false)
+	@Test(groups="regression")
 	public void mergeLead() throws Exception{
-		login();
 		clickByLink("Leads");
 		clickByLink("Merge Leads");
 		clickByXpath("(//img[@alt='Lookup'])[1]");

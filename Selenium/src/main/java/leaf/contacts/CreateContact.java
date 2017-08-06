@@ -1,14 +1,14 @@
 package leaf.contacts;
 
-import org.junit.Test;
+
+import org.testng.annotations.Test;
 
 import wrappers.LeafTapsWrapper;
 
 public class CreateContact extends LeafTapsWrapper {
 
-	@Test
+	@Test(groups={"smoke"})
 	public void  createContact() throws Exception {
-		login();		
 		clickByLink("Contacts");
 		clickByLink("Create Contact");
 		enterById("firstNameField", "Gopinath");

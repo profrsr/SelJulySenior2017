@@ -6,7 +6,7 @@ import wrappers.LeafTapsWrapper;
 
 public class DeleteLead extends LeafTapsWrapper{
 
-	@Test//(dependsOnMethods = {"leaf.leads.EditLead.editLead"},alwaysRun = true)
+	@Test(groups="sanity")//(dependsOnMethods = {"leaf.leads.EditLead.editLead"},alwaysRun = true)
 	public void deleteLead() throws Exception {
 	
 		clickByLink("Leads");

@@ -7,7 +7,7 @@ import wrappers.LeafTapsWrapper;
 
 public class MergeContact extends LeafTapsWrapper {
 	
-	@Test
+	@Test(groups="regression")
 	public void mergeContact() throws Exception{
 		clickByLink("Contacts");
 		clickByLink("Merge Contacts");

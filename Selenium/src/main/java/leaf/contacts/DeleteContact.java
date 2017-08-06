@@ -8,7 +8,7 @@ import wrappers.LeafTapsWrapper;
 public class DeleteContact extends LeafTapsWrapper {
 
 	
-	@Test
+	@Test(groups="sanity")
 	public void deleteContact() throws Exception{
 		
 		clickByLink("Contacts");
