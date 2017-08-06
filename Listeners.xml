@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="5">
+	
+	<parameter name="Browser" value="chrome"></parameter>
+	<parameter name="URL" value="http://106.51.127.250/control/main"></parameter>
+	<parameter name="UN" value="DemoCSR"></parameter>
+	<parameter name="PWD" value="crmsfa"></parameter>
+	<listeners>
+		<listener class-name="leaf.listeners.ChangeInvCount"></listener>
+	</listeners>
+	<test name="Test">
+		<classes>
+			<class name="leaf.listeners.CreateLead" />
+			<class name="leaf.listeners.EditLead" />
+
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

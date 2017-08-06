@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Suite" parallel="methods">
+  <test name="Test">
+    <classes>
+      <class name="leaf.leads.CreateLead">
+      	<methods>
+      		<!-- <include name="create.*"></include> -->
+      		<exclude name="merge.*"></exclude>
+      	</methods>
+      
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

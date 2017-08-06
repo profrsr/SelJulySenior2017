@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="classes">
+	<test name="Leads">
+		<classes>
+			<class name="leaf.leads.DuplicateLead" />
+			<class name="leaf.leads.CreateLead" />
+			<class name="leaf.leads.EditLead" />
+			<class name="leaf.leads.MergeLead" />
+			<class name="leaf.leads.DeleteLead" />
+			<class name="leaf.leads.DeleteLead" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="Contacts" parallel="false">
+		<classes>
+			<class name="leaf.contacts.CreateContact" />
+			<class name="leaf.contacts.MergeContact" />
+			<class name="leaf.contacts.EditContact" />
+			<class name="leaf.contacts.DeleteContact" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
